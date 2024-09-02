@@ -12,7 +12,7 @@ export default function LoginPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError(null);
-
+  
     try {
       const res = await fetch('/api/auth/login', {
         method: 'POST',
@@ -21,14 +21,17 @@ export default function LoginPage() {
         },
         body: JSON.stringify({ email, password }),
       });
-
+  
       const data = await res.json();
-
+  
       if (!res.ok) {
         // Hiển thị thông báo lỗi từ phản hồi máy chủ
         throw new Error(data.message || 'An error occurred');
       }
-
+  
+      // Lưu token vào localStorage (nếu có)
+      localStorage.setItem('token', data.token);
+  
       // Điều hướng đến trang users sau khi đăng nhập thành công
       router.push('/users'); // Chuyển hướng đến trang users
     } catch (error) {
@@ -36,6 +39,7 @@ export default function LoginPage() {
       setError("Sai tên đăng nhập hoặc mật khẩu !!");
     }
   };
+  
 
   return (
     <div className={styles.container}>
