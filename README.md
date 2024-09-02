@@ -12,6 +12,7 @@ Open [http://localhost:3000](http://localhost:3000);
 cần thêm môi địa chỉ của mongo vào để có thể lưu trữ data, hoặc có thể sử dụng địa chỉ này : 
 
 MONGODB_URI=mongodb+srv://manhkhiem2703:khiem123@cluster0.9uncq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+JWT_SECRET = asdmkaslmdklamsdmas
 
 su dung tk toi cung cap de dang nhap
 
