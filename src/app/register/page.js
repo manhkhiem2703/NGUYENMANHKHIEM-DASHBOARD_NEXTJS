@@ -48,7 +48,6 @@ export default function RegisterPage() {
       }
 
       setSuccess("Đăng ký thành công!");
-      // Xử lý sau khi đăng ký thành công, ví dụ tự động đăng nhập hoặc chuyển hướng đến trang đăng nhập
     } catch (error) {
       setError(error.message);
     } finally {
