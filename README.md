@@ -18,7 +18,7 @@ su dung tk toi cung cap de dang nhap
 tk:admin@gmail.com/admin
 <!-- //chua co chuc nang dang nhap bang username  chi dang nhap bang mail-->
 get all : http://localhost:3000/api/users;
-get user : http://localhost:3000/api/users/usersId;
+get user : http://localhost:3000/api/users/[usersId];
 
 # thêm user
 POST : http://localhost:3000/api/users;
@@ -41,5 +41,5 @@ POST : http://localhost:3000/api/users;
 
 
 ############
-PUT : http://localhost:3000/api/user/usersId;
-DELETE : http://localhost:3000/api/user/userid;
+PUT : http://localhost:3000/api/user/[usersId];
+DELETE : http://localhost:3000/api/user/[usersId];
