@@ -1,0 +1,31 @@
+/* Đặt chiều cao đầy đủ cho body và html */
+
+
+/* Container chính */
+.container {
+  display: 100%;
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  height: 100%; /* Chiều cao toàn bộ màn hình */
+  background-color: #f7f7f7; /* Màu nền tùy chọn */
+}
+
+/* Form */
+.form {
+  background: #ffffff; /* Màu nền của form */
+  padding: 20px;
+  border-radius: 8px; /* Bo tròn góc form */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+  width: 100%;
+  max-width: 600px; /* Chiều rộng tối đa của form */
+}
+
+/* Các nhóm input */
+.inputGroup {
+  margin-bottom: 15px; /* Khoảng cách giữa các nhóm input */
+}
+
+/* Nút submit */
+.buttonContainer {
+  text-align: center;
+}

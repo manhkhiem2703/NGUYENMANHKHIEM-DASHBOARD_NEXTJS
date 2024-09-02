@@ -1,0 +1,14 @@
+.relative {
+    overflow-x: hidden; /* Ẩn thanh cuộn ngang */
+  }
+  
+  .container {
+    max-width: 100%;
+    overflow-x: hidden; /* Đảm bảo container không tràn ra ngoài */
+  }
+  
+  .fixed {
+    max-width: 100%;
+    overflow-x: hidden; /* Đảm bảo phần tử fixed không tràn ra ngoài */
+  }
+  
